@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <welcome-screen v-if="status === 'welcome'" @start="onStart" />
-    <main-screen v-if="status === 'welcome'" />
+    <main-screen v-if="status === 'playing'" />
   </div>
 </template>
 
