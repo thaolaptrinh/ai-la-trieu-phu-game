@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <welcome-screen v-if="status === 'welcome'" @start="onStart" />
-    <main-screen v-if="status === 'playing'" />
+    <main-screen v-if="status === 'welcome'" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import MainScreen from "./components/MainScreen.vue";
 const status = ref("playing");
 
 function onStart() {
-  status.value = "playing";
+  // status.value = "playing";
 }
 </script>
 
