@@ -12,7 +12,7 @@ import MainScreen from "./components/MainScreen.vue";
 const status = ref("welcome");
 
 function onStart() {
-  // status.value = "playing";
+  status.value = "playing";
 }
 </script>
 

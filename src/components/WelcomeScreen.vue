@@ -5,7 +5,6 @@
         <div class="logo">
           <img src="../assets/images/logo.png" alt="Logo" />
         </div>
-
         <button @click="onStart">Bắt đầu</button>
       </div>
     </div>
