@@ -1,12 +1,12 @@
 <template>
   <div class="welcome-screen">
-    <div class="container bg-welcome">
+    <div class="container">
       <div class="content">
         <div class="logo">
           <img src="../assets/images/logo.png" alt="Logo" />
         </div>
 
-        <button @click="onStart">START</button>
+        <button @click="onStart">Bắt đầu</button>
       </div>
     </div>
   </div>
@@ -21,18 +21,13 @@ function onStart() {
 
 <style lang="scss" scoped>
 .welcome-screen {
-  background-color: #201268;
-  min-height: 100vh;
-}
-
-.bg-welcome {
-  background: url("../assets/images/bg-1.jpg");
+  background: url("../assets/images/bgr.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
-  height: 100vh;
-  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .content {
@@ -60,6 +55,7 @@ button {
   cursor: pointer;
   &:hover {
     opacity: 0.8;
+    background-color: #22074d;
   }
 }
 </style>
