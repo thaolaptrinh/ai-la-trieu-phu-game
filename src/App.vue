@@ -9,7 +9,7 @@
 import { ref } from "vue";
 import WelcomeScreen from "./components/WelcomeScreen.vue";
 import MainScreen from "./components/MainScreen.vue";
-const status = ref("welcome");
+const status = ref("playing");
 
 function onStart() {
   // status.value = "playing";

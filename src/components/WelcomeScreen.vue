@@ -21,7 +21,7 @@ function onStart() {
 
 <style lang="scss" scoped>
 .welcome-screen {
-  background: #805850;
+  background-color: #201268;
   min-height: 100vh;
 }
 
