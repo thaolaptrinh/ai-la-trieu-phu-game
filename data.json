@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "question": "“Albicelestes” là biệt danh của đội tuyển bóng đá quốc gia nào",
+    "answers": {
+      "answer_a": "Tây Ban Nha",
+      "answer_b": "Bồ Đào Nha",
+      "answer_c": "Séc",
+      "answer_d": "Argentina"
+    },
+    "answer_true": "answer_d"
+  },
+  {
+    "id": 2,
+    "question": "“ Ai muốn cao ngồi ghế/ Ai muốn thấp ngồi đòn/ Ai muốn đỏ bôison/ Ai muốn vàng bôi nghệ…” Là những câu hát thuộc thể loại gì?",
+    "answers": {
+      "answer_a": "Ca dao",
+      "answer_b": "Tục ngữ",
+      "answer_c": "Đồng giao",
+      "answer_d": "Thành ngữ"
+    },
+    "answer_true": "answer_c"
+  },
+  {
+    "id": 3,
+    "question": "“Bạch đầu quân” là tên gọi của lực lượng dân quân nào trong khángchiến chống Mỹ?",
+    "answers": {
+      "answer_a": "Các cụ già",
+      "answer_b": "Thanh niên",
+      "answer_c": "Phụ nữ",
+      "answer_d": "Nhi đồng"
+    },
+    "answer_true": "answer_a"
+  },
+  {
+    "id": 15,
+    "question": "“Nhập gia …” thì làm sao?",
+    "answers": {
+      "answer_a": "Tùy người",
+      "answer_b": "Tùy cảnh",
+      "answer_c": "Tùy tâm",
+      "answer_d": "Tuỳ tục"
+    },
+    "answer_true": "answer_d"
+  },
+  {
+    "id": 16,
+    "question": "“Nhất xương, nhì da, thứ ba đến lửa” là thành ngữ về kinh nghiệmtrong ngành nghề nào?",
+    "answers": {
+      "answer_a": "Mây tre đan",
+      "answer_b": "Chạm khắc",
+      "answer_c": "Gốm sứ",
+      "answer_d": "Lụa"
+    },
+    "answer_true": ""
+  },
+  {
+    "id": 17,
+    "question": " “Những người ăn khoai” là tên bức họa đầu tay của họa sĩ nào?",
+    "answers": {
+      "answer_a": "Van Gogh",
+      "answer_b": "Levitan",
+      "answer_c": "Picasso",
+      "answer_d": "Picasso"
+    },
+    "answer_true": "answer_c"
+  },
+  {
+    "id": 14,
+    "question": "“Năm gian nhà cỏ thấp le te/ Ngõ tối đêm sâu đóm lập loè”.Là 2câu thơ mở đầu bài thơ nào sau đây?",
+    "answers": {
+      "answer_a": "Thu điếu",
+      "answer_b": "Thu ẩm",
+      "answer_c": "Thu vịnh",
+      "answer_d": "Thu hứng"
+    },
+    "answer_true": "answer_b"
+  },
+  {
+    "id": 13,
+    "question": "“Mình tròn mắt nhỏ li ti/ Mâm cơm đã dọn tôi thì ngồi lên” là chỉvật gì?",
+    "answers": {
+      "answer_a": "Lồng bàn",
+      "answer_b": "Thìa",
+      "answer_c": "Dĩa",
+      "answer_d": "Đũa cả"
+    },
+    "answer_true": "answer_a"
+  },
+  {
+    "id": 12,
+    "question": "“Lộng ngữ” là cách gọi khác của biện pháp tu từ nào sau đây?",
+    "answers": {
+      "answer_a": "Ẩn dụ",
+      "answer_b": "Chơi chữ",
+      "answer_c": "Hoán dụ",
+      "answer_d": "Nhân hoá"
+    },
+    "answer_true": "answer_b"
+  },
+  {
+    "id": 11,
+    "question": "“Linh dương đen” là tên gọi đội bóng nào?",
+    "answers": {
+      "answer_a": "Cameroon",
+      "answer_b": "Nigeria",
+      "answer_c": "Bờ Biển Ngà",
+      "answer_d": "Angola"
+    },
+    "answer_true": "answer_d"
+  },
+  {
+    "id": 10,
+    "question": "“Hoài sơn – sơn dược” là các tên gọi trong đông y của loại củ nàosau đây?",
+    "answers": {
+      "answer_a": "Củ đậu",
+      "answer_b": "Củ dong",
+      "answer_c": "Củ mài",
+      "answer_d": "Củ nghệ"
+    },
+    "answer_true": "answer_c"
+  },
+  {
+    "id": 9,
+    "question": "“Hẹn gặp nhé giữa Sài Gòn” là câu hát cuối trong bài hát nào?",
+    "answers": {
+      "answer_a": "Lá xanh",
+      "answer_b": "Lá đỏ",
+      "answer_c": "Tình ca",
+      "answer_d": "Người Hà Nội"
+    },
+    "answer_true": "answer_b"
+  },
+  {
+    "id": 7,
+    "question": "“Dẫu mà cha đánh mẹ treo/ Cũng không bỏ hội … đêm rằm”. Trongdấu … là ngôi chùa nào?",
+    "answers": {
+      "answer_a": "Chùa Dâu",
+      "answer_b": "Chùa Keo",
+      "answer_c": "Chùa Thiên Mụ",
+      "answer_d": "Chùa Hương"
+    },
+    "answer_true": "answer_b"
+  },
+  {
+    "id": 8,
+    "question": "“Đường lên Tây Bắc” là ca khúc do nhạc sỹ nào sáng tác?",
+    "answers": {
+      "answer_a": "Huy Du",
+      "answer_b": "Văn An",
+      "answer_c": "Vũ Trọng Hối",
+      "answer_d": "Hoàng Hiệp"
+    },
+    "answer_true": "answer_b"
+  },
+  {
+    "id": 4,
+    "question": "“Cánh đồng bất tận” là một tác phẩm nổi tiếng của Nguyễn Ngọc Tưđã được chuyển thể thành phim lấy bối cảnh vùng đất nào?",
+    "answers": {
+      "answer_a": "Đồng bằng Bắc Bộ",
+      "answer_b": "Tây Nguyên",
+      "answer_c": "Đồng bằng sông Cửu Long",
+      "answer_d": "Miền núi phía Bắc"
+    },
+    "answer_true": "answer_c"
+  }
+]
