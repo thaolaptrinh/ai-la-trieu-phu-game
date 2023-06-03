@@ -5,16 +5,26 @@
         <div class="logo">
           <img src="../assets/images/logo.png" alt="Logo" />
         </div>
-        <button @click="onStart">Bắt đầu</button>
+        <div>
+          <input type="text" class="startInput" v-model="userName" />
+        </div>
+        <button @click="onStartGame">Bắt đầu</button>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+
 const emit = defineEmits(["start"]);
-function onStart() {
-  emit("start");
+const userName = ref("");
+function onStartGame() {
+  if (userName.value) {
+    emit("start", userName.value);
+  } else {
+    console.log("Username required");
+  }
 }
 </script>
 

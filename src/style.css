@@ -28,27 +28,29 @@
 .link-light {
   color: #fff;
 }
-
 .app {
   overflow: hidden;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   color: white;
   background-color: #020230;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .main {
   flex: 3;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230),
-    url("./assets/bg.jpg") center;
+    url("./assets/images/bgr.jpg") center;
   display: flex;
   flex-direction: column;
   background-size: cover;
 }
 
-/* Start Pyramid */
-
-.pyramid {
+.prizeList {
   overflow: scroll;
   padding: 0;
   flex: 1;
@@ -124,8 +126,6 @@
 
 .question {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   background: linear-gradient(#100241, black);
   text-align: center;
   padding: 30px;
