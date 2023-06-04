@@ -170,7 +170,6 @@ Use this space to list resources you find helpful and would like to give credit 
 - [Img Shields](https://shields.io)
 - [GitHub Pages](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
-- [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
