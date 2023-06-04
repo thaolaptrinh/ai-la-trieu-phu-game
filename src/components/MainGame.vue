@@ -1,23 +1,13 @@
 <template>
   <div class="game">
-    <div class="question">{{ question.question }}</div>
+    <div class="question">{{ question.title }}</div>
     <div class="answers">
       <button
         v-for="(answer, key) in question.answers"
         class="answer"
         :key="key"
         @click="handleClick(key)"
-        :class="{
-          active: selectedAnswer === key,
-          correct:
-            selectedAnswer === key &&
-            key === question.answer_true &&
-            showResult,
-          wrong:
-            selectedAnswer === key &&
-            key !== question.answer_true &&
-            showResult,
-        }"
+        :class="answerClasses(key)"
         :disabled="isDisabled"
       >
         {{ answer }}
@@ -27,33 +17,60 @@
 </template>
 
 <script setup>
-import { ref, toRefs } from "vue";
+import { ref, toRef, computed, reactive } from "vue";
+import sound from "../utils/sound";
 
+const soundInstance = sound();
 const props = defineProps(["question"]);
+const question = toRef(props, "question");
+
 const emit = defineEmits(["answer"]);
 
 const selectedAnswer = ref(null);
-const { question } = toRefs(props);
 const isDisabled = ref(false);
 const showResult = ref(false);
 
-const delay = (duration, callback) => {
-  setTimeout(() => {
-    callback();
-  }, duration);
+const answerClasses = computed(() => {
+  return (key) => ({
+    active: selectedAnswer.value === key,
+    correct:
+      selectedAnswer.value === key &&
+      key === question.value.answer_true &&
+      showResult.value,
+    wrong:
+      selectedAnswer.value === key &&
+      key !== question.value.answer_true &&
+      showResult.value,
+  });
+});
+
+const delay = (duration) => {
+  return new Promise((resolve) => {
+    setTimeout(resolve, duration);
+  });
 };
-const handleClick = (answer) => {
+
+const handleClick = async (answer) => {
   selectedAnswer.value = answer;
   isDisabled.value = true;
-  delay(1000, () => {
-    showResult.value = true;
-    delay(3000, () => {
-      selectedAnswer.value = null;
-      showResult.value = false;
-      isDisabled.value = false;
-      emit("answer", answer);
-    });
-  });
+  soundInstance.playWait();
+
+  await delay(2000);
+
+  showResult.value = true;
+  if (answer == question.value.answer_true) {
+    soundInstance.playCorrect();
+  } else {
+    soundInstance.playWrong();
+  }
+
+  await delay(5000);
+
+  soundInstance.stop();
+  selectedAnswer.value = null;
+  showResult.value = false;
+  isDisabled.value = false;
+  emit("answer", answer);
 };
 </script>
 <style lang="scss" scoped>
@@ -64,8 +81,10 @@ const handleClick = (answer) => {
   flex-direction: column;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   gap: 30px;
+  height: 100%;
 }
 
 .question {

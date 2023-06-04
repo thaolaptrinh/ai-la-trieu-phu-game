@@ -5,7 +5,7 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref, toRefs, watch } from "vue";
 
-const COUNT_DOWN = 15;
+const COUNT_DOWN = 30;
 const countdown = ref(COUNT_DOWN);
 const emit = defineEmits(["timeout"]);
 
