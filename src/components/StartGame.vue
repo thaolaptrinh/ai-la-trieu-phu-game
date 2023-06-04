@@ -6,7 +6,12 @@
           <img src="../assets/images/logo.png" alt="Logo" />
         </div>
         <div>
-          <input type="text" class="startInput" v-model="userName" />
+          <input
+            type="text"
+            class="startInput"
+            v-model="userName"
+            placeholder="Enter username"
+          />
         </div>
         <button @click="onStartGame">Bắt đầu</button>
       </div>
@@ -19,13 +24,13 @@ import { ref } from "vue";
 
 const emit = defineEmits(["start"]);
 const userName = ref("");
-function onStartGame() {
+const onStartGame = () => {
   if (userName.value) {
     emit("start", userName.value);
   } else {
     console.log("Username required");
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -66,5 +71,20 @@ button {
     opacity: 0.8;
     background-color: #22074d;
   }
+}
+
+.startInput {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.startInput:focus {
+  outline: none;
 }
 </style>

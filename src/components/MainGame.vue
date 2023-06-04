@@ -4,10 +4,20 @@
     <div class="answers">
       <button
         v-for="(answer, key) in question.answers"
-        :key="key"
         class="answer"
+        :key="key"
         @click="handleClick(key)"
-        :class="{ active: selectedAnswer === question.answer_true }"
+        :class="{
+          active: selectedAnswer === key,
+          correct:
+            selectedAnswer === key &&
+            key === question.answer_true &&
+            showResult,
+          wrong:
+            selectedAnswer === key &&
+            key !== question.answer_true &&
+            showResult,
+        }"
         :disabled="isDisabled"
       >
         {{ answer }}
@@ -17,18 +27,33 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, toRefs } from "vue";
 
-const props = defineProps(["data", "questionNumber"]);
-const { data, questionNumber } = props;
+const props = defineProps(["question"]);
+const emit = defineEmits(["answer"]);
 
-let question = ref(data[questionNumber]);
 const selectedAnswer = ref(null);
+const { question } = toRefs(props);
 const isDisabled = ref(false);
+const showResult = ref(false);
 
+const delay = (duration, callback) => {
+  setTimeout(() => {
+    callback();
+  }, duration);
+};
 const handleClick = (answer) => {
-  isDisabled.value = true;
   selectedAnswer.value = answer;
+  isDisabled.value = true;
+  delay(1000, () => {
+    showResult.value = true;
+    delay(3000, () => {
+      selectedAnswer.value = null;
+      showResult.value = false;
+      isDisabled.value = false;
+      emit("answer", answer);
+    });
+  });
 };
 </script>
 <style lang="scss" scoped>
