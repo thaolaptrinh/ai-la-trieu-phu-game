@@ -43,6 +43,9 @@ import StartGame from "./components/StartGame.vue";
 import MainGame from "./components/MainGame.vue";
 import TimerGame from "./components/TimerGame.vue";
 import data from "../data.json";
+import sound from "./utils/sound";
+
+const soundInstance = sound();
 
 const prizeList = [
   { id: 1, amount: "$ 100" },
@@ -60,7 +63,7 @@ const prizeList = [
   { id: 13, amount: "$ 250.000" },
   { id: 14, amount: "$ 500.000" },
   { id: 15, amount: "$ 1.000.000" },
-].reverse();
+];
 
 const userName = ref(null);
 const gameStarted = ref(false);
@@ -68,6 +71,7 @@ const currentQuestionIndex = ref(0);
 const earnedMoney = ref("$ 0");
 
 const startGame = (username) => {
+  soundInstance.playGame();
   userName.value = username;
   gameStarted.value = true;
 };
@@ -79,6 +83,7 @@ const playAgain = () => {
 };
 
 const endGame = () => {
+  soundInstance.playGame();
   gameStarted.value = false;
 };
 
@@ -96,10 +101,7 @@ const nextQuestion = () => {
 
 const checkAnswer = (selectedAnswer) => {
   if (selectedAnswer === currentQuestion.value.answer_true) {
-    earnedMoney.value = prizeList.slice().reverse()[
-      currentQuestionIndex.value
-    ].amount;
-
+    earnedMoney.value = prizeList[currentQuestionIndex.value].amount;
     nextQuestion();
   } else {
     endGame();
@@ -107,65 +109,4 @@ const checkAnswer = (selectedAnswer) => {
 };
 </script>
 
-<style scoped>
-.earnedMoney {
-  background-color: rgb(32, 18, 104);
-  position: relative;
-  padding: 50px;
-  margin: auto;
-  border-radius: 20px;
-}
-
-.timer {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 5px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 10px;
-  left: 110px;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.prizeList {
-  overflow: scroll;
-  padding: 0;
-  flex: 1;
-  background-color: #020230;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.moneyList {
-  padding: 20px;
-  list-style: none;
-  width: 100%;
-}
-
-.moneyListItem {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  padding: 15px 10px;
-}
-
-.moneyListItem.active {
-  background-color: teal;
-}
-
-.moneyListItemNumber {
-  width: 30%;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-.moneyListItemAmount {
-  font-size: 20px;
-  font-weight: 300;
-}
-</style>
+<style scoped></style>
