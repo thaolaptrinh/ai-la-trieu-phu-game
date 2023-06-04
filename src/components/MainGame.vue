@@ -2,20 +2,13 @@
   <div class="game">
     <div class="question">{{ question.question }}</div>
     <div class="answers">
-      <!-- <button
-        v-for="(answer, key) in question.answers"
-        :key="key"
-        class="answer"
-        :class="{ active: selectedAnswer === answer }"
-        @click="handleClick(answer)"
-        :disabled="isDisabled"
-      >
-        {{ answer.text }}
-      </button> -->
       <button
         v-for="(answer, key) in question.answers"
         :key="key"
         class="answer"
+        @click="handleClick(key)"
+        :class="{ active: selectedAnswer === question.answer_true }"
+        :disabled="isDisabled"
       >
         {{ answer }}
       </button>
@@ -24,10 +17,19 @@
 </template>
 
 <script setup>
+import { ref } from "vue";
+
 const props = defineProps(["data", "questionNumber"]);
 const { data, questionNumber } = props;
-const question = data[questionNumber];
-console.log("🚀 ~ file: MainGame.vue:28 ~ question:", question);
+
+let question = ref(data[questionNumber]);
+const selectedAnswer = ref(null);
+const isDisabled = ref(false);
+
+const handleClick = (answer) => {
+  isDisabled.value = true;
+  selectedAnswer.value = answer;
+};
 </script>
 <style lang="scss" scoped>
 .game {

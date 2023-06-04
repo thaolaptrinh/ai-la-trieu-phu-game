@@ -1,16 +1,14 @@
 <template>
   <div class="app" v-if="userName !== null">
     <div class="main">
-      <template v-if="stop">
-        <h1 class="earnedMoney">
-          {{ userName }}
-        </h1>
-        <button class="startButton">Play Again</button>
+      <template v-if="isStop">
+        <h1 class="earnedMoney">{{ userName }} earned: {{ earnedMoney }}</h1>
+        <button class="startButton" @click="onPlayAgain">Play Again</button>
       </template>
       <template v-else>
         <div class="top">
           <div class="timer">
-            <TimerGame />
+            <TimerGame :setStop="setStop" />
           </div>
         </div>
         <div class="bottom">
@@ -62,12 +60,24 @@ const prizeList = [
 ].reverse();
 
 const userName = ref(null);
-const stop = ref(false);
+const isStop = ref(false);
 const questionNumber = ref(1);
+const earnedMoney = ref("$ 0");
+
+const onPlayAgain = () => {
+  earnedMoney.value = "$ 0";
+  isStop.value = false;
+  questionNumber.value = 1;
+  console.log("play again");
+};
 
 // handle on start game
 const onStartGame = (username) => {
   userName.value = username;
+};
+
+const setStop = (status) => {
+  isStop.value = status;
 };
 </script>
 
