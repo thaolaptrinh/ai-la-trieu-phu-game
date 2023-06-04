@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "“Albicelestes” là biệt danh của đội tuyển bóng đá quốc gia nào",
+    "title": "“Albicelestes” là biệt danh của đội tuyển bóng đá quốc gia nào",
     "answers": {
       "answer_a": "Tây Ban Nha",
       "answer_b": "Bồ Đào Nha",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "question": "“ Ai muốn cao ngồi ghế/ Ai muốn thấp ngồi đòn/ Ai muốn đỏ bôison/ Ai muốn vàng bôi nghệ…” Là những câu hát thuộc thể loại gì?",
+    "title": "“ Ai muốn cao ngồi ghế/ Ai muốn thấp ngồi đòn/ Ai muốn đỏ bôison/ Ai muốn vàng bôi nghệ…” Là những câu hát thuộc thể loại gì?",
     "answers": {
       "answer_a": "Ca dao",
       "answer_b": "Tục ngữ",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "question": "“Bạch đầu quân” là tên gọi của lực lượng dân quân nào trong khángchiến chống Mỹ?",
+    "title": "“Bạch đầu quân” là tên gọi của lực lượng dân quân nào trong khángchiến chống Mỹ?",
     "answers": {
       "answer_a": "Các cụ già",
       "answer_b": "Thanh niên",
@@ -34,7 +34,7 @@
   },
   {
     "id": 15,
-    "question": "“Nhập gia …” thì làm sao?",
+    "title": "“Nhập gia …” thì làm sao?",
     "answers": {
       "answer_a": "Tùy người",
       "answer_b": "Tùy cảnh",
@@ -45,7 +45,7 @@
   },
   {
     "id": 16,
-    "question": "“Nhất xương, nhì da, thứ ba đến lửa” là thành ngữ về kinh nghiệmtrong ngành nghề nào?",
+    "title": "“Nhất xương, nhì da, thứ ba đến lửa” là thành ngữ về kinh nghiệmtrong ngành nghề nào?",
     "answers": {
       "answer_a": "Mây tre đan",
       "answer_b": "Chạm khắc",
@@ -56,7 +56,7 @@
   },
   {
     "id": 17,
-    "question": " “Những người ăn khoai” là tên bức họa đầu tay của họa sĩ nào?",
+    "title": " “Những người ăn khoai” là tên bức họa đầu tay của họa sĩ nào?",
     "answers": {
       "answer_a": "Van Gogh",
       "answer_b": "Levitan",
@@ -67,7 +67,7 @@
   },
   {
     "id": 14,
-    "question": "“Năm gian nhà cỏ thấp le te/ Ngõ tối đêm sâu đóm lập loè”.Là 2câu thơ mở đầu bài thơ nào sau đây?",
+    "title": "“Năm gian nhà cỏ thấp le te/ Ngõ tối đêm sâu đóm lập loè”.Là 2câu thơ mở đầu bài thơ nào sau đây?",
     "answers": {
       "answer_a": "Thu điếu",
       "answer_b": "Thu ẩm",
@@ -78,7 +78,7 @@
   },
   {
     "id": 13,
-    "question": "“Mình tròn mắt nhỏ li ti/ Mâm cơm đã dọn tôi thì ngồi lên” là chỉvật gì?",
+    "title": "“Mình tròn mắt nhỏ li ti/ Mâm cơm đã dọn tôi thì ngồi lên” là chỉvật gì?",
     "answers": {
       "answer_a": "Lồng bàn",
       "answer_b": "Thìa",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "question": "“Lộng ngữ” là cách gọi khác của biện pháp tu từ nào sau đây?",
+    "title": "“Lộng ngữ” là cách gọi khác của biện pháp tu từ nào sau đây?",
     "answers": {
       "answer_a": "Ẩn dụ",
       "answer_b": "Chơi chữ",
@@ -100,7 +100,7 @@
   },
   {
     "id": 11,
-    "question": "“Linh dương đen” là tên gọi đội bóng nào?",
+    "title": "“Linh dương đen” là tên gọi đội bóng nào?",
     "answers": {
       "answer_a": "Cameroon",
       "answer_b": "Nigeria",
@@ -111,7 +111,7 @@
   },
   {
     "id": 10,
-    "question": "“Hoài sơn – sơn dược” là các tên gọi trong đông y của loại củ nàosau đây?",
+    "title": "“Hoài sơn – sơn dược” là các tên gọi trong đông y của loại củ nàosau đây?",
     "answers": {
       "answer_a": "Củ đậu",
       "answer_b": "Củ dong",
@@ -122,7 +122,7 @@
   },
   {
     "id": 9,
-    "question": "“Hẹn gặp nhé giữa Sài Gòn” là câu hát cuối trong bài hát nào?",
+    "title": "“Hẹn gặp nhé giữa Sài Gòn” là câu hát cuối trong bài hát nào?",
     "answers": {
       "answer_a": "Lá xanh",
       "answer_b": "Lá đỏ",
@@ -133,7 +133,7 @@
   },
   {
     "id": 7,
-    "question": "“Dẫu mà cha đánh mẹ treo/ Cũng không bỏ hội … đêm rằm”. Trongdấu … là ngôi chùa nào?",
+    "title": "“Dẫu mà cha đánh mẹ treo/ Cũng không bỏ hội … đêm rằm”. Trongdấu … là ngôi chùa nào?",
     "answers": {
       "answer_a": "Chùa Dâu",
       "answer_b": "Chùa Keo",
@@ -144,7 +144,7 @@
   },
   {
     "id": 8,
-    "question": "“Đường lên Tây Bắc” là ca khúc do nhạc sỹ nào sáng tác?",
+    "title": "“Đường lên Tây Bắc” là ca khúc do nhạc sỹ nào sáng tác?",
     "answers": {
       "answer_a": "Huy Du",
       "answer_b": "Văn An",
@@ -155,7 +155,7 @@
   },
   {
     "id": 4,
-    "question": "“Cánh đồng bất tận” là một tác phẩm nổi tiếng của Nguyễn Ngọc Tưđã được chuyển thể thành phim lấy bối cảnh vùng đất nào?",
+    "title": "“Cánh đồng bất tận” là một tác phẩm nổi tiếng của Nguyễn Ngọc Tưđã được chuyển thể thành phim lấy bối cảnh vùng đất nào?",
     "answers": {
       "answer_a": "Đồng bằng Bắc Bộ",
       "answer_b": "Tây Nguyên",
